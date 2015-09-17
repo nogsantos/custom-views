@@ -13,6 +13,10 @@
 		61FD6A541BAB446D001903B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61FD6A521BAB446D001903B7 /* Main.storyboard */; };
 		61FD6A561BAB446D001903B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61FD6A551BAB446D001903B7 /* Assets.xcassets */; };
 		61FD6A591BAB446D001903B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61FD6A571BAB446D001903B7 /* LaunchScreen.storyboard */; };
+		61FD6A631BAB45D1001903B7 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FD6A621BAB45D1001903B7 /* Login.m */; settings = {ASSET_TAGS = (); }; };
+		61FD6A6B1BAB4C13001903B7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FD6A691BAB4C13001903B7 /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		61FD6A6C1BAB4C13001903B7 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61FD6A6A1BAB4C13001903B7 /* LoginViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		61FD6A6E1BAB5333001903B7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 61FD6A6D1BAB5333001903B7 /* README.md */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		61FD6A551BAB446D001903B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61FD6A581BAB446D001903B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61FD6A5A1BAB446D001903B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61FD6A611BAB45D1001903B7 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		61FD6A621BAB45D1001903B7 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
+		61FD6A681BAB4C13001903B7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		61FD6A691BAB4C13001903B7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		61FD6A6A1BAB4C13001903B7 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		61FD6A6D1BAB5333001903B7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,7 @@
 		61FD6A3D1BAB446B001903B7 = {
 			isa = PBXGroup;
 			children = (
+				61FD6A6D1BAB5333001903B7 /* README.md */,
 				61FD6A481BAB446C001903B7 /* CustomViews */,
 				61FD6A471BAB446C001903B7 /* Products */,
 			);
@@ -60,6 +71,7 @@
 			children = (
 				61FD6A4C1BAB446D001903B7 /* AppDelegate.h */,
 				61FD6A4D1BAB446D001903B7 /* AppDelegate.m */,
+				61FD6A601BAB45A0001903B7 /* Auth */,
 				61FD6A4F1BAB446D001903B7 /* ViewController.h */,
 				61FD6A501BAB446D001903B7 /* ViewController.m */,
 				61FD6A521BAB446D001903B7 /* Main.storyboard */,
@@ -77,6 +89,18 @@
 				61FD6A4A1BAB446D001903B7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61FD6A601BAB45A0001903B7 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				61FD6A611BAB45D1001903B7 /* Login.h */,
+				61FD6A621BAB45D1001903B7 /* Login.m */,
+				61FD6A681BAB4C13001903B7 /* LoginViewController.h */,
+				61FD6A691BAB4C13001903B7 /* LoginViewController.m */,
+				61FD6A6A1BAB4C13001903B7 /* LoginViewController.xib */,
+			);
+			name = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61FD6A6C1BAB4C13001903B7 /* LoginViewController.xib in Resources */,
 				61FD6A591BAB446D001903B7 /* LaunchScreen.storyboard in Resources */,
 				61FD6A561BAB446D001903B7 /* Assets.xcassets in Resources */,
 				61FD6A541BAB446D001903B7 /* Main.storyboard in Resources */,
@@ -150,9 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61FD6A6E1BAB5333001903B7 /* README.md in Sources */,
 				61FD6A511BAB446D001903B7 /* ViewController.m in Sources */,
 				61FD6A4E1BAB446D001903B7 /* AppDelegate.m in Sources */,
 				61FD6A4B1BAB446D001903B7 /* main.m in Sources */,
+				61FD6A631BAB45D1001903B7 /* Login.m in Sources */,
+				61FD6A6B1BAB4C13001903B7 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
